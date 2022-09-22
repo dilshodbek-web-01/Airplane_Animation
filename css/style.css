@@ -1,0 +1,43 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.box {
+  width: 100% vh;
+  height: 100vh;
+  background-color: skyblue;
+}
+
+.airplane {
+  width: 250px;
+  height: 250px;
+  position: relative;
+  bottom: 800px;
+  animation-name: airplane;
+  animation-duration: 15s;
+  animation-iteration-count: 4;
+  animation-delay: 0s;
+  animation-fill-mode: backwards;
+  animation-play-state: running;
+  animation-direction: alternate;
+}
+
+@keyframes airplane {
+  0% {
+    position: absolute;
+    top: 50%;
+    left: -20%;
+  }
+  100% {
+    position: absolute;
+    top: 50%;
+    left: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */
